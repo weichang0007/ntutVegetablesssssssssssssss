@@ -1,6 +1,11 @@
+html {
+    background-color: rgb(250, 255, 250);
+    width: 1000px;
+}
+
 .index__container
 {
-    margin: 30px;
+    display: block;
 }
 
 .index__header

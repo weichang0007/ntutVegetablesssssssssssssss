@@ -1,18 +1,15 @@
-html {
-	background-color: #869960;
-}
-
-
 /* Navitation Bar Style */
+
 .nav {
-	margin-top: 20px;
+	width: 100%;
+	margin: 0px auto;
+	background-color: rgb(191, 214, 145);
 }
 
 .nav__list {
 	display: flex;
-	margin: 0;
+	margin: 30px;
 	padding: 0;
-	
 }
 
 .nav__list--submenu {
