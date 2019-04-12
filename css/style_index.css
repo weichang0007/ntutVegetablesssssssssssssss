@@ -22,10 +22,19 @@
 
 .index__article__announce-block
 {
-
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .index__article__announce
 {
-    
+    width:100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.index__article__announce p
+{
+    margin-right: 30px;
 }
