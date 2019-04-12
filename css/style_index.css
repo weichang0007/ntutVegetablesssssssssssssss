@@ -1,0 +1,31 @@
+.index__container
+{
+    margin: 30px;
+}
+
+.index__header
+{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.index__article
+{
+
+}
+
+.index__article__main-img
+{
+
+}
+
+.index__article__announce-block
+{
+
+}
+
+.index__article__announce
+{
+    
+}
