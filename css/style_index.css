@@ -1,11 +1,13 @@
 html {
     background-color: rgb(250, 255, 250);
-    width: 1000px;
+    /*width: 1000px;*/
 }
 
 .index__container
 {
     display: block;
+    width: 1000px;
+    margin: 0px auto;
 }
 
 .index__header
