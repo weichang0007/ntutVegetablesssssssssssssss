@@ -1,0 +1,68 @@
+.menu__article
+{
+	margin: 0px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	perspective: 1000px;
+	transform-style: preserve-3d;
+}
+
+.menu__title
+{
+	font-family: Microsoft JhengHei, sans-serif;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+
+.menu__article__img
+{
+	position: relative;
+	margin-bottom: 40px;
+	transition: 0.6s ease-out;
+	transform-style: preserve-3d;
+	transform-origin: 100% 130px;
+	
+}
+
+.menu__article__img:hover
+{ 
+	transform: rotateX(180deg);
+}
+
+.menu__article__img__back
+{
+	z-index: 0;
+	backface-visibility: hidden;
+	transform: rotateX(180deg);
+}
+
+.menu__article__img__front
+{
+	z-index: 1;
+	backface-visibility: hidden;
+}
+
+.menu__article__img__front__text
+{
+	z-index: 2;
+	bottom: 0px;
+}
+
+.menu__article__img, .menu__article__img__back, .menu__article__img__front__text, .menu__article__img__back__text, .img
+{
+	width: 300px;
+	height: 260px;
+}
+
+.menu__article__img__back, .menu__article__img__front, .menu__article__img__front__text, .menu__article__img__back__text
+{
+	position: absolute;
+}
+
+.menu__text
+{
+	text-align: center;
+	height: auto;
+}
