@@ -77,3 +77,10 @@ html {
     margin: 0 30px;
     width: 10%;
 }
+
+.index__article__announce__separete-line
+{
+    width: 1000px;
+    height: 1px;
+    background-color: black;
+}
