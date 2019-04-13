@@ -18,6 +18,9 @@ $(document).ready(function() {
     $(".menu__article__img").click(function() {
         $("#menu_mask").addClass("mask").fadeIn("slow");
         $("#menu_box").fadeIn("slow");
+        $("#box_title").text($(this).children(".menu__article__img__front").children(".menu__article__img__front__text").text());
+        $("#box_img_main").attr("src", $(this).children(".menu__article__img__back").children(".img").attr("src"));
+        $("#box_text_id").html($("." + $(this).children(".menu__article__img__front").attr("id")).html());
         BoxToCenter();
     });
 
