@@ -34,17 +34,19 @@
 	padding: 10px 20px;
 	border-radius: 3px;
 	border: 3px solid #e5e9dc;
-	border-bottom: none;
+	/*border-bottom: none;*/
 }
 
 .nav__list-item-link--submenu {
 	display: block;
-	background-color: #e5e9dc;
+	/*background-color: #e5e9dc;*/
+	background-color: #fff;
 	color: #617140;
 	text-decoration: none;
 	padding: 10px 20px;
-	border: 3px solid #e5e9dc;
-	border-bottom: none;
+	/*border: 3px solid #e5e9dc;*/
+	border: 3px solid #fff;
+	/*border-bottom: none;*/
 }
 
 .nav__list-item:hover>.nav__list-item-link {
