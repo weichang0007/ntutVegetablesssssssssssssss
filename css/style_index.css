@@ -12,9 +12,12 @@ html {
 
 .index__header
 {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
+    width: 100%;
+}
+
+.index__header img
+{
+    width: 100%;
 }
 
 .index__article
