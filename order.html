@@ -52,10 +52,11 @@
             住址：<input type='text'><br>
 
         </form>
-        <br>
         <div id="ss">
-                選擇菜色：
+            <br>
+            選擇菜色：
             <select name"select_plate">
+                <option value="0">無</option>
                 <optgroup label="-----夏季菜單-----">
                 <option value="2">薑黃花椰菜</option>
                 <option value="3">低油薑絲清炒菠菜</option>
@@ -80,28 +81,34 @@
             </select>
             份量：
             <select name"select_number">
+                <option value="0">無</option>
                 <option value="1">1份</option>
                 <option value="2">2份</option>
                 <option value="3">3份</option>
                 <option value="4">4份</option>
                 <option value="5">5份</option>
+                <option value="6">6份</option>
+                <option value="7">7份</option>
+                <option value="8">8份</option>
+                <option value="9">9份</option>
+                <option value="10">10份</option>
             </select>
             <br>
         </div>
-
         <button id="btn1">新增選項</button>
- 
-        
-        <input type="submit" value="訂購"> 
-        
-
+        <br><br><br><br>
+        <input type="submit" value="確認訂購" onclick="history.go(0);"> 
+    </div>
+    
     <footer class="footer">
-        <!--<script src="./js/footer.js"></script>-->
-        Copyright:This is vegetablessssss<br>
-        地址:台北高級工地<br>
-        電話:09123456789<br>
-    </footer>
+            <!--<script src="./js/footer.js"></script>-->
+            Copyright:This is vegetablessssss<br>
+            地址:台北高級工地<br>
+            電話:09123456789<br>
+        </footer> 
+
 
 
 </body>
+
 </html>
