@@ -45,7 +45,8 @@ html {
     width: 1000px;
     height: auto;
     margin: 30px 30px 30px 0;
-    border-style: outset;
+    /*border-style: outset;*/
+    background-color: rgb(231, 248, 231);
     
 }
 
