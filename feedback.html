@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style_menu.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:300,100,400' rel='stylesheet' type='text/css'>
-	<script src="js/jquery.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/post_tool.js"></script>
     <script src="js/script.js"></script>
     <script src="js/select.js"></script>
 	<title>意見回饋</title>
@@ -45,15 +46,15 @@
         </article>
         <form>
 
-                姓名：<input type='text'><br>
-                電話：<input type='text'><br>
-                信箱：<input type='text'><br>
+                姓名：<input type='text' id="name"><br>
+                電話：<input type='text' id="phone"><br>
+                信箱：<input type='text' id="email"><br>
     
             </form>
-            <div id="ss">
+            <div id="sec">
                 <br>
                 享用菜色：
-                <select name"select_plate">
+                <select name="select_plate">
                     <option value="0">無</option>
                     <optgroup label="-----夏季菜單-----">
                     <option value="2">薑黃花椰菜</option>
@@ -78,7 +79,7 @@
                     <option value="20">燙炒地瓜葉</option>
                 </select>
                 評價：
-                <select name"select_number">
+                <select name="select_number">
                     <option value="0">無</option>
                     <option value="1">1分</option>
                     <option value="2">2分</option>
@@ -94,9 +95,9 @@
                 <br>
             </div>
             <button id="btn1">新增選項</button>
-            <br><br>更多意見：<br><textarea name="Content" placeholder="例:想吃肉"></textarea><br>
+            <br><br>更多意見：<br><textarea id="other" name="Content" placeholder="例:想吃肉"></textarea><br>
                        
-            <input type="submit" value="送出表單" onclick="history.go(0);" > 
+            <input id="submit0" type="submit" value="送出表單" onclick="" > 
         </div>
     </div>
     <footer class="footer">
