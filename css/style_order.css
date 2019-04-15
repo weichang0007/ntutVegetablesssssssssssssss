@@ -17,6 +17,28 @@ body {
   justify-content: center;
   align-items: center;
 }*/
+.order{
+  display: flex;
+  justify-content: center;
+}
+ul.info{
+  display: table;
+  margin: 0 auto;
+  list-style:none;
+  padding-left: 0;
+}
+
+.moreReq{
+  display: table;
+  margin: 0 auto;
+}
+#sec ul li{
+  display: inline;
+  list-style:none;
+}
+.A{
+  padding-left: 385px;
+}
 
 .description {
   margin-top: 50px;
