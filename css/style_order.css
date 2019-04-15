@@ -18,10 +18,7 @@ body {
   align-items: center;
 }*/
 .order{
-  display: flex;
-  justify-content: center;
-  padding-bottom: 30px;
-  font-size:30px;
+  margin-bottom:30px;
 }
 ul.info{
   display: table;
