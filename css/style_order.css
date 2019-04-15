@@ -29,6 +29,9 @@ body {
 .order{
   margin-bottom:30px;
 }
+.feedback{
+  margin-bottom:30px;
+}
 ul.info{
   display: table;
   list-style:none;
