@@ -2,6 +2,7 @@
 
 .nav {
 	background-color: rgb(191, 214, 145);
+	box-shadow: rgb(158, 158, 158) 0.1em 0.1em 0.2em;
 }
 
 .nav__list {
@@ -22,18 +23,21 @@
 
 .nav__list-item {
 	border-radius: 3px;
-	background-color: #fff;
+	/*background-color: #fff;*/
 	list-style: none;
 	margin-right: 5px;
 }
 
 .nav__list-item-link {
+	font-size: 20px;
+	text-shadow: rgb(88, 88, 88) 0.1em 0.1em 0.2em;
 	display: block;
-	color: #617140;
+	font-weight: bold;
+	color: #ffffff;
 	text-decoration: none;
 	padding: 10px 20px;
 	border-radius: 3px;
-	border: 3px solid #e5e9dc;
+	/*border: 3px solid #e5e9dc;*/
 	/*border-bottom: none;*/
 }
 
@@ -44,13 +48,13 @@
 	color: #617140;
 	text-decoration: none;
 	padding: 10px 20px;
+	background-color: rgb(242, 247, 249);
 	/*border: 3px solid #e5e9dc;*/
-	border: 3px solid #fff;
 	/*border-bottom: none;*/
 }
 
 .nav__list-item:hover>.nav__list-item-link {
-	background-color: #e5e9dc;
+	background-color: rgb(134, 153, 96);
 }
 
 .nav__list--submenu .nav__list-item-link--submenu:hover {

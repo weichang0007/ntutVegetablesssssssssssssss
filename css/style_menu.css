@@ -13,9 +13,13 @@ body
 	transform-style: preserve-3d;
 }
 
+h1
+{
+	margin: 0px;
+}
+
 .menu__title
 {
-	margin-bottom: 40px;
 	text-align: center;
 	font-size: 30px;
 }
@@ -75,6 +79,15 @@ body
 	font-weight: bold;
 	text-shadow: black 0.1em 0.1em 0.2em;
 	-webkit-text-stroke: 1.5px #000000;
+}
+
+.split__line
+{
+    width: 35%;
+    height: 3px;
+	margin: 15px auto;
+	margin-bottom: 40px;
+    background-color: rgb(116, 116, 116);
 }
 
 .mask

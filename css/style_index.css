@@ -45,7 +45,10 @@ html {
     width: 1000px;
     height: auto;
     margin: 30px 30px 30px 0;
+    border-radius: 3px;
     /*border-style: outset;*/
+    border-style: solid;
+    border-color: rgb(219, 219, 219);
     background-color: rgb(231, 248, 231);
     
 }
@@ -66,6 +69,7 @@ html {
     padding: 30px;
     text-align: center;
     line-height: 30px;
+    font-weight: bold;
 }
 
 .index__article__announce__content
@@ -85,7 +89,8 @@ html {
 
 .index__article__announce__separete-line
 {
-    width: 1000px;
-    height: 1px;
-    background-color: black;
+    width: 95%;
+    height: 2px;
+    margin: 0px auto;
+    background-color: rgb(187, 187, 187);
 }
