@@ -20,6 +20,8 @@ body {
 .order{
   display: flex;
   justify-content: center;
+  padding-bottom: 30px;
+  font-size:30px;
 }
 ul.info{
   display: table;
@@ -27,19 +29,34 @@ ul.info{
   list-style:none;
   padding-left: 0;
 }
-
 .moreReq{
   display: table;
-  margin: 0 auto;
+  margin: 0 385px;
+  padding-bottom: 100px;
+}
+.btnn{
+  padding-bottom: 100px;
 }
 #sec ul li{
+  display: inline;
+  list-style:none;
+
+}
+.seClass ul li{
   display: inline;
   list-style:none;
 }
 .A{
   padding-left: 385px;
+  list-style:none;
 }
-
+.btn1{
+  margin-left:385px;
+}
+.area{
+  width:230px;
+  height: 85px;
+}
 .description {
   margin-top: 50px;
   text-align: center;

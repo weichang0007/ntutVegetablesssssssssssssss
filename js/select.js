@@ -1,10 +1,7 @@
 $(document).ready(function(){
  
     $("#btn1").click(function(){
-      $("#btn1").before("<div>"+$("#sec").html()+"</div>");
-    });
-    $("#btn2").click(function(){
-      $("<div>"+$("#ss").html()+"</div>").remove();
+      $("#btn1").before("<div class='seClass'>"+$("#sec").html()+"</div>");
     });
     
     var btn = document.querySelector( '.btn' );
