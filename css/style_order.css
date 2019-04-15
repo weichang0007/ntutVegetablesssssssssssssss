@@ -17,19 +17,25 @@ body {
   justify-content: center;
   align-items: center;
 }*/
+.block{
+  display: inline-flex;
+  justify-content:center;
+  width:1000px;
+  height: 320px;
+}
+.block1{
+  width:300px;
+}
 .order{
   margin-bottom:30px;
 }
 ul.info{
   display: table;
-  margin: 0 auto;
   list-style:none;
   padding-left: 0;
 }
 .moreReq{
   display: table;
-  margin: 0 385px;
-  padding-bottom: 100px;
 }
 .btnn{
   padding-bottom: 100px;
@@ -44,12 +50,10 @@ ul.info{
   list-style:none;
 }
 .A{
-  padding-left: 385px;
   list-style:none;
+  padding-left:0;
 }
-.btn1{
-  margin-left:385px;
-}
+
 .area{
   width:230px;
   height: 85px;
