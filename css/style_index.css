@@ -108,3 +108,11 @@ html {
     margin: 0px auto;
     background-color: rgb(187, 187, 187);
 }
+
+.index__article__score
+{
+    width: 100%;
+    height: auto;
+    padding: 0px 0px 30px 0px;
+    text-align: center;
+}
