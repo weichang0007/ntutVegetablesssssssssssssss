@@ -1,13 +1,17 @@
 /* Navitation Bar Style */
 
 .nav {
+	position:fixed;
 	background-color: rgb(191, 214, 145);
 	box-shadow: rgb(158, 158, 158) 0.1em 0.1em 0.2em;
+	z-index: 999;
+	width: 1000px;
+	margin: 0;
 }
 
 .nav__list {
 	display: flex;
-	margin: 30px;
+	margin: 0px;
 	padding: 0;
 }
 
