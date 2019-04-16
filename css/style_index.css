@@ -120,7 +120,7 @@ html {
 #index__article__score-table
 {
     width: 100%;
-    margin: 0px auto 30px auto;
+    margin: 0px auto;
     text-align: center;
     background-color: rgb(231, 248, 231);
     border: 2px solid rgb(187, 187, 187);
@@ -130,7 +130,6 @@ html {
 #index__article__score-table thead
 {
     text-align: center;
-    
 }
 
 #index__article__score-table th
