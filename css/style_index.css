@@ -116,3 +116,14 @@ html {
     padding: 0px 0px 30px 0px;
     text-align: center;
 }
+
+#index__article__score-table
+{
+    margin: 0px auto;
+    text-align: left;
+}
+
+#index__article__score-table td
+{
+    height: 25px;
+}

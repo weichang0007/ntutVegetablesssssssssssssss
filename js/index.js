@@ -3,6 +3,7 @@ var currentPage = 1;//目前頁數
 var firstPage = 1;//第一頁
 var lastPage = 1;//最後一頁
 var scoreArr=[];//評價陣列
+var scoreItem=['id','name','phone','email','dish','other'];
 
 $(document).ready(function(){
         
@@ -51,15 +52,18 @@ function getScore()//從網頁撈資料
             for(var i = 0;i<len;i++)
             {
                 var content="";
-                content += "id:" + data[i]['id'] + ", name:" + data[i]['name']
+                content += data[i]['id'] + " : " + data[i]['name']
                  + ", phone:" + data[i]['phone'] + ", email:" + data[i]['email']
                  + ", dish:" + data[i]['dish'] + ", other:" + data[i]['other'];
-                 
-                scoreArr.push(content);//評分陣列增加一筆資料
+                
+                scoreArr.push(data[i]);//評分陣列增加一筆資料
+                if(scoreCount < 5)//一頁只顯示五筆
+                {
+                   appendScoreElement(data[i].id,data[i].name,data[i].phone,data[i].email,data[i].dish,data[i].other);
+                }
                 scoreCount++;//評分數量增加
 
-                if(scoreCount <= 5)//一頁只顯示五筆
-                    appendScoreElement(content);
+                
                     
                 if((scoreCount - 1) % 5 == 0 && scoreCount > 5)//超過五筆增加頁面，每五筆增加一次
                 {
@@ -67,27 +71,75 @@ function getScore()//從網頁撈資料
                     document.getElementById("index__article__score__last-page").textContent="第"+lastPage.toString()+"頁";
                 }
                 document.getElementById("index__article__score-count").textContent
-                ="共"+scoreCount.toString()+"筆評價，第" + currentPage.toString() + "頁";
+                ="共"+scoreCount.toString()+"筆評價";
                 
             }
 
     });
 }
 
-function appendScoreElement(data)
-{
-    var p = document.createElement("p");
-    p.className="index__article__score";
-    p.textContent = data;
-    var score_block = document.getElementsByClassName("index__article__score-block")[0];
-    score_block.appendChild(p);
+function appendScoreElement(id,name,phone,email,dish,other)
+{    
+    var table = document.getElementById("index__article__score-table");
+
+    var newTr=document.createElement('tr');
+    
+    for(var i = 0;i<6;i++)
+    {
+        var newTd = document.createElement('td');
+
+        switch(i)
+        {
+            case 0:
+                newTd.appendChild(document.createTextNode(id));
+            break;
+            
+            case 1:
+                newTd.appendChild(document.createTextNode(name));
+            break;
+            
+            case 2:
+                newTd.appendChild(document.createTextNode(phone));
+            break;
+            
+            case 3:
+                newTd.appendChild(document.createTextNode(email)); 
+            break;
+            
+            case 4:
+                newTd.appendChild(document.createTextNode(dish));
+            break;
+            
+            case 5:
+                newTd.appendChild(document.createTextNode(other));
+            break;
+        }
+        newTr.appendChild(newTd);
+    }
+
+    table.appendChild(newTr);
 }
 
 function showScore()
 {
-    var scores = document.getElementsByClassName("index__article__score");
-    for(var i = 0;i<5;i++)
+    var score_table = document.getElementById("index__article__score-table");
+    
+    for(var i = scoreCount % 5;i<5;i++)
     {
-        scores[i].textContent = scoreArr[5*(currentPage-1)+i];
+        for(var j = 0;j<6;j++)
+        {
+            score_table.rows[i+1].cells[j].textContent = "";
+        }
     }
+
+    for(var i = 0;i<score_table.rows.length;i++)
+    {
+        for(var j = 0;j<6;j++)
+        {
+            score_table.rows[i+1].cells[j].textContent = scoreArr[5*(currentPage-1)+i][scoreItem[j]];
+        }  
+    }
+
+    
+    
 }

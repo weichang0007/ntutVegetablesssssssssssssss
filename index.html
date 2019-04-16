@@ -13,7 +13,7 @@
     
 	<title>Vegetablessssss</title>
 </head>
-<body>
+<body onload="getScore()">
     <div class="index__container">
         <header class="index__header">
             <img src="./img/ntut_logo.png" alt="北科LOGO">
@@ -96,15 +96,25 @@
 
             <div class="index__article__score-block">
                 <p id="index__article__score-count">共0筆評價</p>
+                
+                <table id="index__article__score-table" border="1">
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>name</th>
+                        <th>phone</th>
+                        <th>email</th>
+                        <th>dish</th>
+                        <th>other</th>
+                    </tr>
+                </thead>
+                </table>
 
                 <a href="#" id="index__article__score__first-page"> 第1頁 </a>
                 <a href="#" id="index__article__score__previous-page"> 上一頁 </a>
                 <a href="#" id = "index__article__score__current-page"> 1 </a>
                 <a href="#" id="index__article__score__next-page"> 下一頁 </a>
                 <a href="#" id="index__article__score__last-page"> 第1頁 </a>
-                
-                <br>
-                <input type="button" value="測試用的btn" onclick="getScore()">
 
             </div>
         </article>
