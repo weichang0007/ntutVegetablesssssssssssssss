@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $("#submit0").click(function() {
+    $("#post_btn").click(function() {
         var selectVal = new Array();
         $('select :selected').each(function(i, item)
         {
@@ -10,7 +10,7 @@ $(document).ready(function() {
                 selectVal.push("Nan");
         });
 
-        if( $("#name").val() != "" && $("#phone").val() != "" && $("#email").val() != "" && selectVal.join(',').search("Nan") < 0)
+        if( $("#name").val() != "" && $("#phone").val() != "" && $("#email").val() != "" && selectVal.join(',').search("Nan") < 0) {
             $.ajax({
                 type: "post",
                 data: {
@@ -23,10 +23,10 @@ $(document).ready(function() {
                 },
                 url: "https://script.google.com/macros/s/AKfycbzEp_CO43FOyydUhhyKPugqT7z9SHqu2xyav-5KvYhpN3h5pDyX/exec"
             });
-        else
+            localStorage["set_alert"] = "true";
+            window.location.replace("./index.html");
+        } else
             alert("不能為空!!!");
-
-        location.reload();
     })
 
 })
