@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style_menu.css">
     <link rel="stylesheet" href="css/style_order.css">
+    		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/cs-select.css" />
+		<link rel="stylesheet" type="text/css" href="css/cs-skin-border.css" />
 	<link href='https://fonts.googleapis.com/css?family=Roboto:300,100,400' rel='stylesheet' type='text/css'>
 	<script src="js/jquery.js"></script>
     <script src="js/script.js"></script>
@@ -64,7 +67,7 @@
                     <ul class="A" id="ss">
                         <li >
                             選擇菜色：
-                            <select name="select_plate">
+                            <select name="select_plate" class="cs-select cs-skin-border">
                                 <option value="0">無</option>
                                 <optgroup label="-----夏季菜單-----">
                                 <option value="2">薑黃花椰菜</option>
@@ -88,10 +91,11 @@
                                 <option value="19">玉米粑粑</option>
                                 <option value="20">燙炒地瓜葉</option>
                             </select>
+
                         </li>
                         <li >
                             份量：
-                            <select name="select_number">
+                            <select name="select_number" class="cs-select cs-skin-border">
                                 <option value="0">無</option>
                                 <option value="1">1份</option>
                                 <option value="2">2份</option>
@@ -111,7 +115,15 @@
                 <button id="btn1" class="btn1">+</button>
             </div>
         </div>
-        
+        <script src="js/classie.js"></script>
+        <script src="js/selectFx.js"></script>
+        <script>
+        (function() {
+            [].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {	
+                new SelectFx(el);
+            } );
+        })();
+    </script>
 
         
         <div class="btnn">
