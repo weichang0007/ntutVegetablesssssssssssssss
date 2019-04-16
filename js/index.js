@@ -82,7 +82,6 @@ function appendScoreElement(id,name,phone,email,dish,other)
     for(var i = 0;i<6;i++)
     {
         var newTd = document.createElement('td');
-
         switch(i)
         {
             case 0:
