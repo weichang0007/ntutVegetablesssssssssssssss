@@ -57,6 +57,7 @@ function getScore()//從網頁撈資料
                  
                 scoreArr.push(content);//評分陣列增加一筆資料
                 scoreCount++;//評分數量增加
+
                 if(scoreCount <= 5)//一頁只顯示五筆
                     appendScoreElement(content);
                     
@@ -76,23 +77,17 @@ function getScore()//從網頁撈資料
 function appendScoreElement(data)
 {
     var p = document.createElement("p");
+    p.className="index__article__score";
     p.textContent = data;
-    var score_block = document.getElementsByClassName("index__article__score")[0];
+    var score_block = document.getElementsByClassName("index__article__score-block")[0];
     score_block.appendChild(p);
 }
 
 function showScore()
 {
-    var score_block = document.getElementsByClassName("index__article__score")[0];
-    for(var i = 0;i<scoreCount;i++)
+    var scores = document.getElementsByClassName("index__article__score");
+    for(var i = 0;i<5;i++)
     {
-        if(i < (currentPage - 1) * 5 || i >= currentPage * 5 - 1)
-        {
-            score_block[i].display = "none";
-        }
-        else
-        {
-            score_block[i].display = "inline";
-        }
+        scores[i].textContent = scoreArr[5*(currentPage-1)+i];
     }
 }
