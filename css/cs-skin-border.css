@@ -69,7 +69,7 @@ div.cs-skin-border {
 }
 
 .cs-skin-border ul span {
-	padding: 1em 2em;
+	padding: 0.5em 1em;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	margin:0;
