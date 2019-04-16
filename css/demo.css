@@ -28,7 +28,7 @@ a {
 }
 
 a:hover, a:focus {
-	color: gray;
+	color: white;
 	outline: none;
 }
 
