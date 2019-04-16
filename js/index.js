@@ -50,12 +50,7 @@ function getScore()//從網頁撈資料
     {
             var len=data.length;
             for(var i = 0;i<len;i++)
-            {
-                var content="";
-                content += data[i]['id'] + " : " + data[i]['name']
-                 + ", phone:" + data[i]['phone'] + ", email:" + data[i]['email']
-                 + ", dish:" + data[i]['dish'] + ", other:" + data[i]['other'];
-                
+            {                
                 scoreArr.push(data[i]);//評分陣列增加一筆資料
                 if(scoreCount < 5)//一頁只顯示五筆
                 {

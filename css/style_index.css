@@ -61,10 +61,10 @@ html {
     padding: 30px 0px 30px 0;   
 }
 
-.index__article__announce:hover
+/*.index__article__announce:hover
 {
     font-size: 18px;
-}
+}*/
 
 .index__article__announce__title
 {
@@ -119,11 +119,41 @@ html {
 
 #index__article__score-table
 {
-    margin: 0px auto;
-    text-align: left;
+    width: 100%;
+    margin: 0px auto 30px auto;
+    text-align: center;
+    background-color: rgb(231, 248, 231);
+    border: 2px solid rgb(187, 187, 187);
+    border-collapse: collapse;
+}
+
+#index__article__score-table thead
+{
+    text-align: center;
+    
+}
+
+#index__article__score-table th
+{
+    border-left: 1px solid rgb(187, 187, 187);
+    border-right: 1px solid rgb(187, 187, 187);
+    border-top: 0px;
+    border-bottom: 1px solid rgb(187, 187, 187);
 }
 
 #index__article__score-table td
 {
     height: 25px;
+    border: 1px solid rgb(187, 187, 187);
+}
+
+.index__article__score-page
+{
+    margin: 0px 10px;
+    text-decoration: none;
+}
+
+.index__article__score-page:hover
+{
+    color: rgb(170, 130, 170);
 }
