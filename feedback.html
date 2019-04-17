@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style_menu.css">
     <link rel="stylesheet" href="css/style_order.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/cs-select.css" />
+    <link rel="stylesheet" type="text/css" href="css/cs-skin-border.css" />
 	<link href='https://fonts.googleapis.com/css?family=Roboto:300,100,400' rel='stylesheet' type='text/css'>
 	<script src="js/jquery.js"></script>
     <script src="js/script.js"></script>
@@ -43,76 +46,33 @@
         </nav>
 
         <article class="feedback">
-            
-            <img src="./img/feedback.jpg">
+            <div class="index__article__main-img">
+                <img src="./img/feedback.jpg">
+            </div>
         </article>
         <div class="block">
             <div class="block1">
                 <ul class="info">
 
-                    <li class="info1">姓名：<input id="name" type='text'></li><br>
-                    <li class="info2">電話：<input id="phone" type='text'></li><br>
-                    <li class="info3">信箱：<input id="email" type='text'></li>
+                    <li class="info1"><input id="name" type='text' placeholder="姓名："></li><br>
+                    <li class="info2"><input id="phone" type='text' placeholder="電話："></li><br>
+                    <li class="info3"><input id="email" type='text' placeholder="信箱："></li>
 
                 </ul>
                 <div class="moreReq">
-                    <br>更多意見：<br><textarea id="other" name="Content"  placeholder="例:想吃肉" class="area"></textarea><br>
+                    <br><br><textarea id="other" name="Content"  placeholder="更多意見
+例:想吃肉" class="area"></textarea><br>
                 </div>
             </div>
 
             <div class="block2">
-                <div id="sec" class="seClass">
-                    <ul class="A" id="ss">
-                        <li >
-                            享用菜色：
-                            <select name="select_plate">
-                                <option value="0">無</option>
-                                <optgroup label="-----夏季菜單-----">
-                                <option value="2">薑黃花椰菜</option>
-                                <option value="3">低油薑絲清炒菠菜</option>
-                                <option value="4">炒空心菜</option>
-                                <option value="5">麻油甜椒龍鬚菜</option>
-                                <option value="6">辣油涼拌茄子</option>
-                                <option value="7">干煸四季豆</option>
-                                <optgroup label="-----冬季菜單-----">
-                                <option value="9">滑炒大白菜</option>
-                                <option value="10">百合綠時蔬</option>
-                                <option value="11">青椒炒甜不辣</option>
-                                <option value="12">炒油菜花</option>
-                                <option value="13">素炒蘿蔔</option>
-                                <option value="14">日式芥末拌芥蘭菜</option>
-                                <optgroup label="-----四季菜單-----">
-                                <option value="15">韭菜炒甜不辣</option>
-                                <option value="16">橙香烤地瓜</option>
-                                <option value="17">奶香豆芽菜</option>
-                                <option value="18">清炒山蘇</option>
-                                <option value="19">玉米粑粑</option>
-                                <option value="20">燙炒地瓜葉</option>
-                            </select>
-                        </li>
-                        <li >
-                            評價：
-                            <select name="select_number">
-                                <option value="0">無</option>
-                                <option value="1">1分</option>
-                                <option value="2">2分</option>
-                                <option value="3">3分</option>
-                                <option value="4">4分</option>
-                                <option value="5">5分</option>
-                                <option value="6">6分</option>
-                                <option value="7">7分</option>
-                                <option value="8">8分</option>
-                                <option value="9">9分</option>
-                                <option value="10">10分</option>
-                            </select>
-                            <br>
-                        </li>
-                    </ul>
-                </div>
+                
                 <button id="btn1" class="btn1">+</button>
             </div>
         </div>
-        
+        <script src="js/classie.js"></script>
+        <script src="js/selectFx.js"></script>
+        <script src="js/select_box.js"></script>        
 
         
         <div class="btnn">
