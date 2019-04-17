@@ -86,6 +86,7 @@ function appendScoreElement(id,name,phone,email,dish,other)
         {
             case 0:
                 newTd.className="index__article__score-table__id";
+                id = id.substr(1,id.length-2);
                 newTd.appendChild(document.createTextNode(id));
             break;
             
