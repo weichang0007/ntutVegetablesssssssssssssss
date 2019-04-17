@@ -4,11 +4,17 @@ $(document).ready(function() {
         var selectVal = new Array();
         $('select :selected').each(function(i, item)
         {
-            if($(item).text() != "無")
+            if($(item).text() != "無" && $(item).text() != "享用菜色" && $(item).text() != "評價")
                 selectVal.push($(item).text());
             else
                 selectVal.push("Nan");
         });
+
+        var phoneRE = /^-?\d+\.?\d*$/;
+        if ($("#phone").val().match(phoneRE)==null && $("#phone").val() != "") {
+            alert("不是數值!!!");
+            return;
+        }
 
         if( $("#name").val() != "" && $("#phone").val() != "" && $("#email").val() != "" && selectVal.join(',').search("Nan") < 0) {
             $.ajax({
