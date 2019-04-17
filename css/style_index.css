@@ -61,29 +61,51 @@ html {
     padding: 30px 0px 30px 0;   
 }
 
-/*.index__article__announce:hover
+.index__article__announce:hover
 {
-    font-size: 18px;
-}*/
+    /*font-size: 18px;*/
+}
 
 .index__article__announce__title
 {
     display: inline-block;
     border-radius: 999em;
-    background-color: rgb(118, 223, 118);
+    /*background-color: rgb(248, 214, 141);*/
+    background-image: url("../img/announce_dish.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+
     margin: 0 0 0 30px;
     padding: 30px;
     text-align: center;
     line-height: 30px;
     font-weight: bold;
+    color: gray;
+    /*box-shadow: 2px 2px 2px gray;*/
+    
+}
+
+.index__article__announce__title img
+{
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+
+.index__article__announce__title p
+{
+    /*text-shadow: 2px 2px 2px gray;*/
+
+    z-index: 1;
 }
 
 .index__article__announce__title:hover
 {
-    transition: 1s ease-in-out;
+    /*transition: 1s ease-in-out;
 	transform-style: preserve-3d;
 	transform-origin: 100% height/2;
-    transform: rotateX(360deg);
+    transform: rotateX(360deg);*/
 }
 
 .index__article__announce__content
@@ -91,6 +113,23 @@ html {
     display: inline-block;
     margin: 0 30px;
     width: 60%;
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+.index__article__announce__content:hover
+{
+    
+}
+
+.index__article__announce__content a
+{
+    text-decoration: none;
+}
+
+.index__article__announce__content a:hover
+{
+    background-color: rgb(159, 182, 159);
 }
 
 .index__article__announce__date
@@ -134,6 +173,7 @@ html {
     border-radius: 10px;
     border-spacing: 0px;
     padding: 10px;
+    word-break: break-all;
 }
 
 #index__article__score-table thead
@@ -147,14 +187,43 @@ html {
     border-right: 1px solid rgb(187, 187, 187);
     border-top: 1px solid rgb(187, 187, 187);
     border-bottom: 1px solid rgb(187, 187, 187);
-    border-radius: 3px;
+    
 }
 
 #index__article__score-table td
 {
     height: 25px;
-    border: 1px solid rgb(187, 187, 187);
-    border-radius: 3px;
+    border: 1px solid rgb(187, 187, 187);   
+}
+
+.index__article__score-table__id
+{
+    width: 3%;
+}
+
+.index__article__score-table__name
+{
+    width: 7%;
+}
+
+.index__article__score-table__phone
+{
+    width: 15%;
+}
+
+.index__article__score-table__email
+{
+    width: 20%;
+}
+
+.index__article__score-table__dish
+{
+    width: 45%;
+}
+
+.index__article__score-table__other
+{
+    width: 10%;
 }
 
 .index__article__score-count

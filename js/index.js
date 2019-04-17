@@ -85,26 +85,32 @@ function appendScoreElement(id,name,phone,email,dish,other)
         switch(i)
         {
             case 0:
+                newTd.className="index__article__score-table__id";
                 newTd.appendChild(document.createTextNode(id));
             break;
             
             case 1:
+                newTd.className="index__article__score-table__name";
                 newTd.appendChild(document.createTextNode(name));
             break;
             
             case 2:
+                newTd.className="index__article__score-table__phone";
                 newTd.appendChild(document.createTextNode(phone));
             break;
             
             case 3:
+                newTd.className="index__article__score-table__email";
                 newTd.appendChild(document.createTextNode(email)); 
             break;
             
             case 4:
+                newTd.className="index__article__score-table__dish";
                 newTd.appendChild(document.createTextNode(dish));
             break;
             
             case 5:
+                newTd.className="index__article__score-table__other";
                 newTd.appendChild(document.createTextNode(other));
             break;
         }
