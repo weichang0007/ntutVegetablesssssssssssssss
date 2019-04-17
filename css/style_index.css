@@ -47,7 +47,7 @@ html {
     margin: 30px 30px 30px 0;
     border-radius: 3px;
     /*border-style: outset;*/
-    border-style: solid;
+    /*border-style: solid;*/
     border-color: rgb(219, 219, 219);
     background-color: rgb(231, 248, 231);
     
@@ -168,8 +168,8 @@ html {
     margin: 0px auto;
     text-align: center;
     background-color: rgb(231, 248, 231);
-    border: 2px solid rgb(187, 187, 187);
-    border-collapse: separate;
+    border: 0px solid rgb(187, 187, 187);
+    border-collapse: collapse;
     border-radius: 10px;
     border-spacing: 0px;
     padding: 10px;
