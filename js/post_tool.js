@@ -17,8 +17,8 @@ $(document).ready(function() {
         }
 
         if( $("#name").val() != "" && $("#phone").val() != "" && $("#email").val() != "" && selectVal.join(',').search("Nan") < 0) {
-            $.ajax({
-                type: "post",
+            $.ajax({ async: false,
+		type: "post",
                 data: {
                 "method": "write",
                 "name": $("#name").val(),
@@ -29,8 +29,8 @@ $(document).ready(function() {
                 },
                 url: "https://script.google.com/macros/s/AKfycbzEp_CO43FOyydUhhyKPugqT7z9SHqu2xyav-5KvYhpN3h5pDyX/exec"
             });
-            localStorage["set_alert"] = "true";
-            window.location.replace("./index.html");
+	    localStorage["set_alert"] = "true";  
+	    window.location.replace("./index.html");
         } else
             alert("不能為空!!!");
     })
